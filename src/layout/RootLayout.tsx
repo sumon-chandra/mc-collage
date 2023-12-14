@@ -1,12 +1,11 @@
 import { Outlet } from "react-router-dom"
+import Header from "../components/navbar/Header"
 
 const RootLayout = () => {
    return (
       <>
-         <header>
-            header
-         </header>
-         <main>
+         <Header />
+         <main className="container mx-auto">
             <Outlet />
          </main>
          <footer>
