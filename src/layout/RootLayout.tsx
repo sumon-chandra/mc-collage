@@ -5,7 +5,7 @@ const RootLayout = () => {
    return (
       <>
          <Header />
-         <main className="container mx-auto">
+         <main className="container mx-auto px-6">
             <Outlet />
          </main>
          <footer>

@@ -10,8 +10,8 @@ const Navbar = () => {
    const [isMenuOpen, setIsMenuOpen] = useState(false)
    return (
       <NextNavbar
-         shouldHideOnScroll
-         className="bg-transparent"
+         className="bg-transparent container mx-auto"
+         maxWidth="full"
          isMenuOpen={isMenuOpen}
          onMenuOpenChange={setIsMenuOpen}
       >
@@ -33,12 +33,12 @@ const Navbar = () => {
             <DesktopNavItem to="#" label="Classes" />
             <DesktopNavItem to="#" label="Admission" />
             <DesktopNavItem to="#" label="My Classes" />
-         </NavbarContent>
-         <NavbarContent justify="end">
-            <NavbarItem className="group relative transition-all flex items-center justify-start gap-2 cursor-pointer">
-               <div>Sign up</div>
-               <IoIosArrowRoundForward size={22} className="group-hover:translate-x-1 duration-300 " />
-            </NavbarItem>
+            <NavbarContent justify="end">
+               <NavbarItem className="group relative transition-all flex items-center justify-start gap-2 cursor-pointer">
+                  <div>Sign up</div>
+                  <IoIosArrowRoundForward size={22} className="group-hover:translate-x-1 duration-300 " />
+               </NavbarItem>
+            </NavbarContent>
          </NavbarContent>
          <NavbarMenu>
             <MobileNavItem to="#" label="Home" />
